@@ -4,48 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="mainbox"><img src="./NicePng_amazon-logo-png_167642.png" alt="" height="40px" width="100px" style="margin: 1px; margin-top: 10px; color: white; margin-left: 5px;"> <img src="./icons8-location-50.png" alt="" height="20px" width="20px" style="color: white; margin-left: 50px; margin-top: 15px;"><pre style="color: white; font-size: small;"> 
+<style>
+.header {
+background: #131921;
+color: white;
+padding: 10px 20px;
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.logo {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: white;
+font-weight: bold;
+font-size: 18px;
+height: 50px;
+width: 120px;
+object-fit: cover;
+}
+.search {
+flex: 1;
+display: flex;
+height: 35px;
+background: white;
+border-radius: 4px;
+overflow: hidden;
+}
+.search input {
+flex: 1;
+border: none;
+padding: 0 10px;
+font-size: 14px;
+}
+.search button {
+width: 40px;
+background: #febd69;
+border: none;
+cursor: pointer;
+}
+.nav {
+display: flex;
+align-items: center;
+gap: 20px;
+font-size: 13px;
+}
+.cart {
+display: flex;
+align-items: center;
+position: relative;
+top: -9px;
+}
+.cart .count {
+position: absolute;
+top: 14px;
+right: -6px;
 
-<div id="hoverbox" style="margin-top: -30px;margin-left: 10px;">DELIVERY TO NEW DELHI 110043
-UPDATE LOCATION
+color: black;
+border-radius: 50%;
+padding: 2px 6px;
+font-size: 12px;
+font-weight: bold;
+}
+</style>
+
+<header class="header">
+<img src="https://tiimg.tistatic.com/fp/1/002/841/amazon-gift-voucher-667.jpg " height="50px" width="120px" style="object-fit: cover;" class=".logo" alt="">
+
+
+<div class="search">
+<input type="text" placeholder="Search for products...">
+<button>🔍</button>
 </div>
-</pre>
 
-<div class="innerbox"><form action=""><label for="search"> <input type="text" placeholder="Search" style="margin-left: 40px;
-height: 40px;
-width: 500px;
-margin-top: 2px;"></label></form>
+
+<div class="nav">
+<div class="account">Hello, Sign in<br><strong>Account & Lists</strong></div>
+<div class="orders">Returns<br><strong>& Orders</strong></div>
+<div class="cart">Cart<div class="count"><img src="https://static.vecteezy.com/system/resources/thumbnails/009/157/893/small/shopping-cart-set-of-shopping-cart-icon-on-white-background-shopping-cart-icon-shopping-cart-design-shopping-cart-icon-sign-shopping-cart-icon-isolated-shopping-cart-symbol-free-vector.jpg" height="26px" width="26px" style="margin-bottom: -10px;" alt=""></div></div>
 </div>
-
-<div class="search"><img src="./search icon.png " alt="" height="45px" width="45px" style="margin-left: -5px; margin-right: -1px;margin-top: -1px; background-color: white;"></div>
-
-<img src="./flag.jpg" alt="" height="20px" width="30px" style="margin-left:100px; margin-top: 15px; border-radius: 5px;">
-
-<label for="Language"><select name="EN" id="EN" style="margin-left: -0.1px;"><option value="EN">EN</option>
-<option value="HN">हिन्दी</option> 
-<option value="MR">मराठी</option> 
-<option value="GJ">ગુજરાતી</option>
-<option value="TM">தமிழ்</option>
-<option value="ML">മലയാളം</option>
-<option value="KN">ಕನ್ನಡ</option> 
-</select>
-</label>
-
-<div style="color: white; margin-left: 100px; margin-top: 15px;">sign in
-
-</div>
-
-<p style="margin-top: 5px;"><img src="./icons8-cart-30.png" alt="" height="40px" style="margin-left: 120px;">
-
-</div>
-
-<!-- NAv END HERE -->
+</header>
+    <!-- NAv END HERE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Here we use carousel -->
-    <section class="main">
+    <section class="caro">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     
@@ -72,8 +118,9 @@ margin-top: 2px;"></label></form>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
-<div class="row1">
+</section>
+<!-- MID PART -->
+  <div class="row1">
         <div class="offer_1">
 
            <img src="./box1.png">
@@ -140,8 +187,9 @@ margin-top: 2px;"></label></form>
         </div>
 
     </section>
+ <!-- mID PART END -->
 
-
+<!-- Here we use Footer -->
     </section>
     <div class="fh">Back To Top</div>
     <footer class="foot">
@@ -187,14 +235,26 @@ margin-top: 2px;"></label></form>
             
         </div>
         <div class="fi">
-            <img src="https://static.vecteezy.com/system/resources/previews/019/136/319/non_2x/amazon-logo-amazon-icon-free-free-vector.jpg" height="50px" width="50px" alt="" style="margin: 20px;">
+            <img src="https://tiimg.tistatic.com/fp/1/002/841/amazon-gift-voucher-667.jpg " height="50px" width="120px" style="object-fit: cover;"  alt="">
+
+             <div class="tt">
+            <div><select name="" id="">
+                <option value="" selected>English</option>
+                <option value="">Hindi</option>
+                <option value="">French</option>
+                <option value="">Bojpuri</option>
+                <option value="">Marathi</option>
+            </select>
+            </div>
+            
         </div>
-        
-    </footer>
-
-
-
-
+        <div class="india">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrIJbX-6MVfN4u1_xWs8A7eADfLg1lU9k7oA&s" height="31px" width="48px" alt=""> India
+            </div>
+        </div>
+        
+        
+    </footer>
 
 </body>
 </html>
